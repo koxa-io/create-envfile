@@ -23,3 +23,5 @@ print("Saving file: " + os.path.join(path, directory, file_name))
 
 with open(os.path.join(path, directory, file_name), "w") as text_file:
     text_file.write(out_file)
+
+print("Saved to: " + os.path.join(path, directory, file_name))
