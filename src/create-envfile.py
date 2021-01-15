@@ -17,11 +17,10 @@ directory = str(os.environ.get("INPUT_DIRECTORY"))
 file_name = str(os.environ.get("INPUT_FILE_NAME"))
 
 path = os.getcwd()
-print(os.listdir(path))
 
 print("Saving file: " + os.path.join(path, directory, file_name))
 
 with open(os.path.join(path, directory, file_name), "w") as text_file:
     text_file.write(out_file)
 
-print("Saved to: " + os.path.join(path, directory, file_name))
+print(os.listdir(path))
