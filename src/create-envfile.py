@@ -17,6 +17,7 @@ directory = str(os.environ.get("INPUT_DIRECTORY"))
 file_name = str(os.environ.get("INPUT_FILE_NAME"))
 
 path = os.getcwd()
+print(os.listdir(path))
 
 print("Saving file: " + os.path.join(path, directory, file_name))
 
